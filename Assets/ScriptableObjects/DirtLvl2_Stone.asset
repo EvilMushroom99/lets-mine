@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: DirtLvl2_Stone
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: 9ef35d9c014855a45aab3f93e038349c, type: 2}
+  - {fileID: 11400000, guid: fea415fcdb64577429ce11590d39a9b1, type: 2}
+  - {fileID: 11400000, guid: adb55096b10e9f041800f2f102adc3ce, type: 2}
+  - {fileID: 11400000, guid: 909fd528e50b6e9448d160a9c976b92a, type: 2}
+  - {fileID: 11400000, guid: a9c14d1ea25234d48a249d78b764a4af, type: 2}
+  maxHealth: 20
+  reward: 0
+  rewardtype: 
+  vfxHit: {fileID: 9221080970458972243, guid: f46ee6b38b210824abb5c7aee3382028, type: 3}
+  vfxDeath: {fileID: 9221080970458972243, guid: 1f0e4fa32777b3b44b55de9a5fd46eaa, type: 3}

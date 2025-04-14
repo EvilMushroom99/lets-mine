@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: 533d3b2d83db15946a229ab83f842b15, type: 2}
+  - {fileID: 11400000, guid: f483d16cb774c3d4fa586d3546eb9b0b, type: 2}
+  - {fileID: 11400000, guid: f483d16cb774c3d4fa586d3546eb9b0b, type: 2}
+  - {fileID: 11400000, guid: bb613af3280fc514791e00621545f1a9, type: 2}
+  - {fileID: 11400000, guid: bb613af3280fc514791e00621545f1a9, type: 2}
+  maxHealth: 1
+  vfxHit: {fileID: 2094831382906671429, guid: 2124ed1815ad44640a55778a8bfe027b, type: 3}
+  vfxDeath: {fileID: 29935311287641473, guid: 889c6ca1caf3ae14f943fcda3deb7b78, type: 3}
+  blockType: 0

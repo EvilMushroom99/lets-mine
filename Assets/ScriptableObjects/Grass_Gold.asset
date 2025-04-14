@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: Grass_Gold
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: be2b8adce59f9b44887f7456d07abc0e, type: 2}
+  - {fileID: 11400000, guid: 50d42692b98369042a720337454b4c61, type: 2}
+  - {fileID: 11400000, guid: 50d42692b98369042a720337454b4c61, type: 2}
+  - {fileID: 11400000, guid: 3d7ba241bbcefc8479a4a46eff1d9ed0, type: 2}
+  - {fileID: 11400000, guid: 3d7ba241bbcefc8479a4a46eff1d9ed0, type: 2}
+  maxHealth: 1
+  vfxHit: {fileID: 2094831382906671429, guid: 2124ed1815ad44640a55778a8bfe027b, type: 3}
+  vfxDeath: {fileID: 29935311287641473, guid: 889c6ca1caf3ae14f943fcda3deb7b78, type: 3}
+  blockType: 2

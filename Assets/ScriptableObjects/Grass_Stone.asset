@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: Grass_Stone
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: ad31d5cf56f098642985046106cc6e30, type: 2}
+  - {fileID: 11400000, guid: b9d8f4655e57eb247a8f58ffb542f66a, type: 2}
+  - {fileID: 11400000, guid: e0a8a673183614647896c50f4eb31dcb, type: 2}
+  - {fileID: 11400000, guid: cc7187425bb9fd246848b63e4a360943, type: 2}
+  - {fileID: 11400000, guid: 235137f2487ab3d4994b7bdfc3e239a5, type: 2}
+  maxHealth: 5
+  reward: 0
+  rewardtype: 
+  vfxHit: {fileID: 9221080970458972243, guid: f46ee6b38b210824abb5c7aee3382028, type: 3}
+  vfxDeath: {fileID: 9221080970458972243, guid: 1f0e4fa32777b3b44b55de9a5fd46eaa, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: DirtLvl3_Diamond
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: f404045397f3e8349a5b294f5f7ce95b, type: 2}
+  - {fileID: 11400000, guid: c85d416a97a5fc743873e1ef0eab3941, type: 2}
+  - {fileID: 11400000, guid: c85d416a97a5fc743873e1ef0eab3941, type: 2}
+  - {fileID: 11400000, guid: 6732b95b51ac2cb46a99f69b45ba4341, type: 2}
+  - {fileID: 11400000, guid: 6732b95b51ac2cb46a99f69b45ba4341, type: 2}
+  maxHealth: 6
+  vfxHit: {fileID: 2094831382906671429, guid: d998aaa472ca69d46984ca23254ebf68, type: 3}
+  vfxDeath: {fileID: 29935311287641473, guid: 1a3d19b43aaab8f42a8212904e4b4dd3, type: 3}
+  blockType: 5

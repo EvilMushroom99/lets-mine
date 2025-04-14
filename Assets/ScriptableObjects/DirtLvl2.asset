@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: DirtLvl2
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: eceeacfaa268d3c4a8db60fc9cfb13d6, type: 2}
+  - {fileID: 11400000, guid: 84384ff473bc77044ba0c891be8b597c, type: 2}
+  - {fileID: 11400000, guid: 84384ff473bc77044ba0c891be8b597c, type: 2}
+  - {fileID: 11400000, guid: 2909c45d62cb26e4fbe9960e7c84bac3, type: 2}
+  - {fileID: 11400000, guid: 2909c45d62cb26e4fbe9960e7c84bac3, type: 2}
+  maxHealth: 12
+  reward: 0
+  rewardtype: 
+  vfxHit: {fileID: 2094831382906671429, guid: e1c7d633557737744ad14941ac9232df, type: 3}
+  vfxDeath: {fileID: 29935311287641473, guid: 75035054417050140808176aaf14060f, type: 3}

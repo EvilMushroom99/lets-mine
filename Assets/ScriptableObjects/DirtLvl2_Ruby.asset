@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: DirtLvl2_Ruby
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: d0326c64add1e5d478cb0febafd9993e, type: 2}
+  - {fileID: 11400000, guid: a3a82c5020e4c714dbd041bde8ffa363, type: 2}
+  - {fileID: 11400000, guid: a3a82c5020e4c714dbd041bde8ffa363, type: 2}
+  - {fileID: 11400000, guid: fb9dca40f04e1c54a8b0a9c9584c874f, type: 2}
+  - {fileID: 11400000, guid: fb9dca40f04e1c54a8b0a9c9584c874f, type: 2}
+  maxHealth: 12
+  vfxHit: {fileID: 2094831382906671429, guid: e1c7d633557737744ad14941ac9232df, type: 3}
+  vfxDeath: {fileID: 29935311287641473, guid: 75035054417050140808176aaf14060f, type: 3}
+  blockType: 4

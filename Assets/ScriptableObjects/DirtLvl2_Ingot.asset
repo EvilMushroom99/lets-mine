@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f4bae3fb1609146be0281d91ea542d, type: 3}
+  m_Name: DirtLvl2_Ingot
+  m_EditorClassIdentifier: 
+  state:
+  - {fileID: 11400000, guid: 576466edba0c67844a8b7553f48e03f5, type: 2}
+  - {fileID: 11400000, guid: dbaa2e3572a66db43b8d0431d25fe094, type: 2}
+  - {fileID: 11400000, guid: dbaa2e3572a66db43b8d0431d25fe094, type: 2}
+  - {fileID: 11400000, guid: 55805d3b242ace2498308d5bcfa1b86e, type: 2}
+  - {fileID: 11400000, guid: 55805d3b242ace2498308d5bcfa1b86e, type: 2}
+  maxHealth: 12
+  vfxHit: {fileID: 2094831382906671429, guid: e1c7d633557737744ad14941ac9232df, type: 3}
+  vfxDeath: {fileID: 29935311287641473, guid: 75035054417050140808176aaf14060f, type: 3}
+  blockType: 3
