@@ -61,7 +61,7 @@ public class MapGenerator : MonoBehaviour
         {
             for (int y = section1End; y < section1Start; y++)
             {
-                Vector3Int position = new Vector3Int(x, y, 0);
+                Vector3Int position = new(x, y, 0);
 
                 tilemap.SetTile(position, GetRandomTile(tilesSection1, section1Prob));
             }
@@ -75,7 +75,7 @@ public class MapGenerator : MonoBehaviour
         {
             for (int y = section2End; y < section2Start; y++)
             {
-                Vector3Int position = new Vector3Int(x, y, 0);
+                Vector3Int position = new(x, y, 0);
 
                 tilemap.SetTile(position, GetRandomTile(tilesSection2, section2Prob));
             }
@@ -88,7 +88,7 @@ public class MapGenerator : MonoBehaviour
         {
             for (int y = section3End; y < section3Start; y++)
             {
-                Vector3Int position = new Vector3Int(x, y, 0);
+                Vector3Int position = new(x, y, 0);
 
                 tilemap.SetTile(position, GetRandomTile(tilesSection3, section3Prob));
             }
@@ -101,7 +101,7 @@ public class MapGenerator : MonoBehaviour
         {
             for (int y = section4End; y < section4Start; y++)
             {
-                Vector3Int position = new Vector3Int(x, y, 0);
+                Vector3Int position = new(x, y, 0);
 
                 tilemap.SetTile(position, GetRandomTile(tilesSection4, section4Prob));
             }
@@ -114,7 +114,7 @@ public class MapGenerator : MonoBehaviour
         {
             for (int y = section5End; y < section5Start; y++)
             {
-                Vector3Int position = new Vector3Int(x, y, 0);
+                Vector3Int position = new(x, y, 0);
 
                 tilemap.SetTile(position, GetRandomTile(tilesSection5, section5Prob));
             }
@@ -127,11 +127,11 @@ public class MapGenerator : MonoBehaviour
     {
         for (int y = -1500; y < 0; y++)
         {
-            Vector3Int position = new Vector3Int(-1, y, 0);
+            Vector3Int position = new(-1, y, 0);
 
             tilemap.SetTile(position, decorationTileLeft);
 
-            position = new Vector3Int(6, y, 0);
+            position = new(6, y, 0);
 
             tilemap.SetTile(position, decorationTileRight);
         }

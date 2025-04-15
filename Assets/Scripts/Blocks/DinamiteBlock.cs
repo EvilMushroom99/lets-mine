@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Threading.Tasks;
 
 public class DinamiteBlock : MonoBehaviour, IBlockeable
 {
@@ -11,7 +12,7 @@ public class DinamiteBlock : MonoBehaviour, IBlockeable
         ExplodeBomb(position, map, tiledata, player);
     }
 
-    private void ExplodeBomb(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)
+    private async void ExplodeBomb(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)
     {
         foreach (Vector3Int dir in directions)
         {
@@ -23,6 +24,7 @@ public class DinamiteBlock : MonoBehaviour, IBlockeable
                     int underScoreIndex = tilemap.GetTile(newPos).name.IndexOf('_');
                     int blockIndex = int.Parse(tilemap.GetTile(newPos).name.Substring(0, underScoreIndex));
                     tiledata.DamageTile(newPos, player.bombDamage, blockIndex);
+                    await Task.Delay(50);
                     ExplodeBombAdjacent(newPos, tilemap, tiledata, player);
                 }
             }
@@ -30,7 +32,7 @@ public class DinamiteBlock : MonoBehaviour, IBlockeable
         }
     }
 
-    private void ExplodeBombAdjacent(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)
+    private async void ExplodeBombAdjacent(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)
     {
         foreach (Vector3Int dir in directions)
         {
@@ -42,6 +44,7 @@ public class DinamiteBlock : MonoBehaviour, IBlockeable
                     int underScoreIndex = tilemap.GetTile(newPos).name.IndexOf('_');
                     int blockIndex = int.Parse(tilemap.GetTile(newPos).name.Substring(0, underScoreIndex));
                     tiledata.DamageTile(newPos, player.bombDamage, blockIndex);
+                    await Task.Delay(50);
                 }
             }
         }

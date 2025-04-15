@@ -6,24 +6,18 @@ using UnityEngine.Tilemaps;
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap; // Asigna tu Tilemap desde el Inspector
+    [SerializeField] private Camera cam;
     private PlayerUI playerUI;
     private Player playerData;
 
     private readonly Vector3Int[] directions = { Vector3Int.up, Vector3Int.down, Vector3Int.left, Vector3Int.right };
 
-    [SerializeField] private CoinCollector coinCollector;
     [SerializeField] private TileData tileData;
-
-    private int lastY;
-    [SerializeField] private Camera cam;
-    [SerializeField] private Transform followObj;
-    [SerializeField] private Tile brokenStoneTile;
     
     private void Start()
     {
         playerUI = GetComponent<PlayerUI>();
         playerData = GetComponent<Player>();
-        lastY = 0;
     }
 
     void Update()
@@ -47,18 +41,7 @@ public class PlayerInput : MonoBehaviour
                     int underScoreIndex = tilemap.GetTile(cellPosition).name.IndexOf('_');
                     int blockIndex = int.Parse(tilemap.GetTile(cellPosition).name.Substring(0, underScoreIndex));
                     tileData.DamageTile(cellPosition, 1f, blockIndex);
-                    //Elimina los clics de la UI
                     playerUI.RestClic();
-
-                    if (!tilemap.HasTile(cellPosition))
-                    {
-                        //Mueve la camara hacia abajo si bajamos 1 row
-                        if (lastY > cellPosition.y)
-                        {
-                            lastY = cellPosition.y;
-                            MoveCameraDown();
-                        }
-                    }
                 }
             }
         }
@@ -81,10 +64,5 @@ public class PlayerInput : MonoBehaviour
         }
         Debug.Log("No se puede romper este tile.");
         return false; // Si todos los lados están ocupados, no se puede picar
-    }
-
-    private void MoveCameraDown()
-    {
-        followObj.transform.position = new Vector3(3f, lastY, 0f);
     }
 }

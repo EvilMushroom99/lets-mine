@@ -1197,7 +1197,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 465e279519674164990540dfc76ffe70, type: 2}
   - {fileID: 11400000, guid: 39dab389f7d585d40998287d207e2bfe, type: 2}
   - {fileID: 11400000, guid: 1623ea83e6d6463428d86532f275a282, type: 2}
-  - {fileID: 11400000, guid: dc29bceec7f3427468ad05b8ca99ee68, type: 2}
+  - {fileID: 11400000, guid: 4e636376be498494d8d6c6820b19d4c4, type: 2}
   tilesSection2:
   - {fileID: 11400000, guid: 3228528950002e741b6272c71449c316, type: 2}
   - {fileID: 11400000, guid: b4c7bcf985148d549a159e2ab9139e58, type: 2}
@@ -1845,6 +1845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674919194}
+  - component: {fileID: 674919195}
   m_Layer: 0
   m_Name: CameraTrackingObject
   m_TagString: Untagged
@@ -1867,6 +1868,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674919195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674919193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2e34440efb3184cbd758b993e79f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420031}
 --- !u!1 &684485110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,6 +3243,7 @@ MonoBehaviour:
   tilemap: {fileID: 2078919906}
   playerUI: {fileID: 1358766342}
   player: {fileID: 1358766343}
+  cameraMovement: {fileID: 674919195}
   coinCollector: {fileID: 1149158146}
   tileLighting: {fileID: 462551149}
   audioManager: {fileID: 1659298997}
@@ -3774,11 +3789,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 2078919906}
-  coinCollector: {fileID: 1149158146}
-  tileData: {fileID: 1081493634}
   cam: {fileID: 519420031}
-  followObj: {fileID: 674919194}
-  brokenStoneTile: {fileID: 11400000, guid: 17a465df9e74fc442abc7ffd47553e66, type: 2}
+  tileData: {fileID: 1081493634}
 --- !u!4 &1358766341
 Transform:
   m_ObjectHideFlags: 0

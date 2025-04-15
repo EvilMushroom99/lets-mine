@@ -7,6 +7,7 @@ public class TileData : MonoBehaviour
     public Tilemap tilemap;
     [SerializeField] private PlayerUI playerUI;
     [SerializeField] private Player player;
+    [SerializeField] private CameraMovement cameraMovement;
     [SerializeField] private CoinCollector coinCollector;
     [SerializeField] private TileLighting tileLighting;
     [SerializeField] private AudioManager audioManager;
@@ -60,6 +61,7 @@ public class TileData : MonoBehaviour
             if (tileHealth[position] <= 0)
             {
                 DestroyTile(position, currentBlock);
+                audioManager.PlayBroke();
             }
             else
             {
@@ -74,6 +76,7 @@ public class TileData : MonoBehaviour
     {
         blockScritps[brokenBlock.blockType].GetComponent<IBlockeable>().DestroyBlock(tilemap, position, this, player); // Borra el tile, segun el bloque
         tileHealth.Remove(position); // Lo elimina del diccionario de vida de bloques
+        cameraMovement.MoveCameraDown(position);
         tileLighting.ChangeLight(position);
         Instantiate(brokenBlock.vfxDeath, position + new Vector3(0.5f, 0.5f, 0f), Quaternion.identity);
         //Debug.Log($"Tile en {position} ha sido destruido.");
