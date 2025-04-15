@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Threading.Tasks;
 
 public class ArrowVerticalBlock : MonoBehaviour, IBlockeable
 {
@@ -12,7 +13,7 @@ public class ArrowVerticalBlock : MonoBehaviour, IBlockeable
         DamageTiles(position, map, tiledata, player);
     }
 
-    private void DamageTiles(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)
+    private async void DamageTiles(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)
     {
         for (int i = 0; i < 4; i++)
         {
@@ -38,6 +39,7 @@ public class ArrowVerticalBlock : MonoBehaviour, IBlockeable
                     tiledata.DamageTile(newPos, player.bombDamage, blockIndex);
                 }
             }
+            await Task.Delay(100);
         }
     }
 }
