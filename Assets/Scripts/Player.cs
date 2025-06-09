@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
             gold += amount * 2; 
             goldMultiplier -= 1; 
         }
-        else gold = amount;
+        else gold += amount;
 
         PlayerPrefs.SetInt("Gold", gold);
     }

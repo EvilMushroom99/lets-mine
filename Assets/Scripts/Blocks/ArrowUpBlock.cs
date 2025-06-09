@@ -10,6 +10,7 @@ public class ArrowUpBlock : MonoBehaviour, IBlockeable
     {
         map.SetTile(position, null);
         DamageTiles(position, map, tiledata, player);
+        AudioManager.Instance.PlayBox();
     }
 
     private async void DamageTiles(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)

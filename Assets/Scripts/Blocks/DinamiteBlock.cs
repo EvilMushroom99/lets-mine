@@ -10,6 +10,7 @@ public class DinamiteBlock : MonoBehaviour, IBlockeable
     {
         map.SetTile(position, null);
         ExplodeBomb(position, map, tiledata, player);
+        AudioManager.Instance.PlayBomb();
     }
 
     private async void ExplodeBomb(Vector3Int pos, Tilemap tilemap, TileData tiledata, Player player)

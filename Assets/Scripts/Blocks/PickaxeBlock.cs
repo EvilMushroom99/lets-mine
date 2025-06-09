@@ -7,5 +7,6 @@ public class PickaxeBlock : MonoBehaviour, IBlockeable
     {
         map.SetTile(position, null);
         player.AddClics(4);
+        AudioManager.Instance.PlayBox();
     }
 }

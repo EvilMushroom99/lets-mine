@@ -14,5 +14,6 @@ public class DangerBlock : MonoBehaviour, IBlockeable
         await Task.Delay(250);
         map.SetTile(position, stoneTiles[0]);
         tiledata.SetNewTile(position, stoneTiles[0]);
+        AudioManager.Instance.PlayBox();
     }
 }

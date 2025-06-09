@@ -20,5 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 465e279519674164990540dfc76ffe70, type: 2}
   maxHealth: 1
   vfxHit: {fileID: 2094831382906671429, guid: d998aaa472ca69d46984ca23254ebf68, type: 3}
-  vfxDeath: {fileID: 29935311287641473, guid: 1a3d19b43aaab8f42a8212904e4b4dd3, type: 3}
+  vfxDeath: {fileID: 2341049413306369890, guid: 44ae084a46b51d14aa49472774cf30ec, type: 3}
   blockType: 1

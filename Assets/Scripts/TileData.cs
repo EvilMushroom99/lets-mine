@@ -10,7 +10,6 @@ public class TileData : MonoBehaviour
     [SerializeField] private CameraMovement cameraMovement;
     [SerializeField] private CoinCollector coinCollector;
     [SerializeField] private TileLighting tileLighting;
-    [SerializeField] private AudioManager audioManager;
 
     [SerializeField] private Dictionary<Vector3Int, float> tileHealth = new Dictionary<Vector3Int, float>();
     private readonly Vector3Int[] directions = { Vector3Int.up, Vector3Int.down, Vector3Int.left, Vector3Int.right };
@@ -61,11 +60,10 @@ public class TileData : MonoBehaviour
             if (tileHealth[position] <= 0)
             {
                 DestroyTile(position, currentBlock);
-                audioManager.PlayBroke();
             }
             else
             {
-                audioManager.PlayHit();
+                AudioManager.Instance.PlayHit();
                 tilemap.SetTile(position, currentBlock.GetState(tileHealth[position]));
                 Instantiate(currentBlock.vfxHit, position + new Vector3(0.5f, 0.5f, 0f), Quaternion.identity);
             }
